@@ -14,6 +14,7 @@ class A {
 public class AccessDemo {
     public static void main(String[] args) {
         A a = new A();
+        //
         System.out.println(a.x());
         System.out.println(a.y());
         // 밑은 오류를 발생시킨다. private

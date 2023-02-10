@@ -1,9 +1,9 @@
 package practice;
 
-interface I3{
+interface I5{
     public void x();
 }
-interface I4 extends I3{
+interface I4 extends I5{
     public void z();
 }
 class InterfaceDemo implements I4{

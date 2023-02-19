@@ -16,7 +16,7 @@ enum Fruit {
     }
 
     Fruit(String color) {
-        System.out.println("Call Constructor" + this);
+        System.out.println("Call Constructor : " + this);
         this.color = color;
     }
 }
@@ -30,12 +30,16 @@ public class ConstantDemo {
         Fruit type = Fruit.APPLE;
         switch (type) {
             case APPLE:
-                System.out.println(57 + "kcal, color" + Fruit.APPLE.getColor());
+                System.out.println(57 + "kcal, color " + Fruit.APPLE.getColor());
                 break;
             case PEACH:
-                System.out.println(34 + "kcal, color" + Fruit.PEACH.getColor());
+                System.out.println(34 + "kcal, color " + Fruit.PEACH.getColor());
             case BANANA:
-                System.out.println(93 + "kcal, color" + Fruit.BANANA.getColor());
+                System.out.println(93 + "kcal, color " + Fruit.BANANA.getColor());
+        }
+        //Fruit.values() 에 담겨있는 각각의 데이터들을 f 에 담는다.
+        for (Fruit f : Fruit.values()){
+            System.out.println(f);
         }
     }
 }
